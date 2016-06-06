@@ -1,0 +1,16 @@
+body {
+
+    margin: 30px 80px 30px 80px;
+}
+
+#positions{
+	background-color: red;
+}
+
+.board{
+	margin-bottom: 3%;
+}
+
+leftside  {
+    float: left;
+}

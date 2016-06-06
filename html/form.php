@@ -38,7 +38,7 @@
 	  </div>
 
 
-	</form>
+
 
 	<p>In order to serve you better, CHEFA is requesting information for each family parent 
 		and K-12 student. This information is only for the use of CHEFA and will not be shared 
@@ -48,7 +48,7 @@
 	</p>
 
 	<tbody>
-		<form class="form-inline">
+
 		  <div class="form-group">
 		    <label for="lastName">Last Name:</label>
 		    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
@@ -69,31 +69,31 @@
 		    <label for="email">Email</label>
 		    <input type="email" class="form-control" id="homeEmail" placeholder="jane.doe@example.com">
 		  </div>
-		</form>
+
 	</tbody>
 
 	<h3><strong>Please check one and complete the information that applies to your school / group: </strong></h3>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="ips" value=" true" checked>
+		    <input type="radio" name="optionsRadios" id="ips" value="true" checked>
 		    IPS-Individual Private School (One family filing own Private School Affidavit)
 		  </label>
 		</div>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="pssp" value=" true">
+		    <input type="radio" name="optionsRadios" id="pssp" value="true">
 		    PSSP-Private School Satellite Program (One private school affidavit is filed on behalf 
 		    of multiple member families)
 		  </label>
 		</div>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="supportgroup" value=" true">
+		    <input type="radio" name="optionsRadios" id="supportgroup" value="true">
 		    SG-Support Group (Each family is responsible for filing its own affidavit, but support 
 		    is offered to member families)
 		  </label>
 		</div>
-	<form class="form-inline">
+
 		  <div class="form-group">
 		    <label for="PsspGroup">PSSP/Group Name:</label>
 		    <input type="text" class="form-control" id="PsspGroup" placeholder="PSSP/Group Name">
@@ -102,37 +102,41 @@
 		    <label for="administrator">Administrator:</label>
 		    <input type="text" class="form-control" id="administrator" placeholder="Administrator">
 		  </div>
-	</form>
 
-	<p><em>As filed with the State of California </em></p>
-	<h3><strong>Membership Agreement</strong></h3>
-	<p><strong>Parents</strong></p>
-	<p>1. I am a Christian. I am a believer in and a follower of Jesus Christ, the Messiah.
-	</p>
-	<p>2. I will cooperate with CHEFA in engaging only Christians in positions of responsibility and leadership.
-	</p>
-	<p>3. I understand that CHEFA will operate as a Christian organization according to the principles of Scripture.
-	</p>
-	<p>4. I will support CHEFA by conducting myself in a Christian manner while participating with and/or serving 
-		members of CHEFA.
-		</p>
-	<p>5. I understand that to be a member I must provide a minimum of 51% of my children&rsquo;s education at home 
-		(juniors/seniors exempt).
-	</p>
-	<p>6. I understand that CHEFA does not accept students as members who participate in, or are enrolled in, a public 
-		school system, including Independent Study Programs and/or Charter Schools.
-	</p>
-	<p>7. I understand that I am solely responsible for my children&rsquo;s conduct at ALL CHEFA events.</p>
-	<h3><strong>Parents and Students</strong></h3>
-	<p>1. I/we have read and agree to honor the CHEFA CODE OF CONDUCT AND DRESS.</p>
-	<p>2. I/we understand that parents are responsible for providing transportation to and from events.</p>
-	<p>3. I/we will not hold CHEFA responsible if a student leaves an event without the knowledge of the CHEFA activity 
-		volunteers or with individuals other than those arranged by parents, and
-	</p>
-	<p>4. I/we agree to hold CHEFA, its leadership, and its members harmless in the event of any damages or injuries 
-		to myself, my family, or property.
-	</p>
-		  <form class="form-inline">
+	<ol>
+		<p><em>As filed with the State of California </em></p>
+		<h3><strong>Membership Agreement</strong></h3>
+		<p><strong>Parents</strong></p>
+		<li>I am a Christian. I am a believer in and a follower of Jesus Christ, the Messiah.
+		</li>
+		<li>I will cooperate with CHEFA in engaging only Christians in positions of responsibility and leadership.
+		</li>
+		<li>I understand that CHEFA will operate as a Christian organization according to the principles of Scripture.
+		</li>
+		<li>I will support CHEFA by conducting myself in a Christian manner while participating with and/or serving 
+			members of CHEFA.
+			</li>
+		<li>I understand that to be a member I must provide a minimum of 51% of my children&rsquo;s education at home 
+			(juniors/seniors exempt).
+		</li>
+		<li>I understand that CHEFA does not accept students as members who participate in, or are enrolled in, a public 
+			school system, including Independent Study Programs and/or Charter Schools.
+		</li>
+		<li>I understand that I am solely responsible for my children&rsquo;s conduct at ALL CHEFA events.</li>
+	</ol>
+
+		<h3><strong>Parents and Students</strong></h3>
+	<ol>
+		<li>I/we have read and agree to honor the CHEFA CODE OF CONDUCT AND DRESS.</li>
+		<li>I/we understand that parents are responsible for providing transportation to and from events.</li>
+		<li>I/we will not hold CHEFA responsible if a student leaves an event without the knowledge of the CHEFA activity 
+			volunteers or with individuals other than those arranged by parents, and
+		</li>
+		<li>I/we agree to hold CHEFA, its leadership, and its members harmless in the event of any damages or injuries 
+			to myself, my family, or property.
+		</li>
+	</ol>
+
 			  <div class="form-group">
 			    <label for="parentSignature">Parent Signature:</label>
 			    <input type="text" class="form-control" id="parentSignature" placeholder="Type Name">
@@ -141,9 +145,9 @@
 			    <label for="date">Date:</label>
 			    <input type="text" class="form-control" id="date" placeholder="Date">
 			  </div>
-		  </form>
 
-		<form class="form-inline">
+
+
 		  <div class="form-group">
 		    <label for="studentname">Student Name:</label>
 		    <input type="text" class="form-control" id="studentname" placeholder="Type Name">
@@ -160,7 +164,7 @@
 		    <label for="studentdate">Date:</label>
 		    <input type="text" class="form-control" id="studentdate" placeholder="Date">
 		  </div>
-		</form>
+
 
 	<h3><strong>Membership Benefits</strong></h3>
 	<p><strong>Membership dues allow you to receive an HSLDA discount and help to support the following CHEFA activities 
@@ -198,7 +202,7 @@
 		Listed below are activities that CHEFA has facilitated in the past but some do 
 		not currently have enough volunteers or are new ones that CHEFA would like to offer.
 	</p>
-	<form action="">
+
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
 			  <input type="checkbox" id="leadership" value="true"> Leadership
@@ -206,12 +210,12 @@
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="cyfact" value=" true"> CYF Activities 
+			  <input type="checkbox" id="cyfact" value="true"> CYF Activities 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="alumniact" value=" true"> Alumni Activities
+			  <input type="checkbox" id="alumniact" value="true"> Alumni Activities
 			</label>
 		</div>
 		<div class="col-md-4 columns">
@@ -221,172 +225,172 @@
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="bonfire" value=" true"> Bonfire 
+			  <input type="checkbox" id="bonfire" value="true"> Bonfire 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="locanlibrary" value=" true"> Locan Library
+			  <input type="checkbox" id="locanlibrary" value="true"> Locan Library
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="fallfamilykickoff" value=" true"> Fall Family Kickoff
+			  <input type="checkbox" id="fallfamilykickoff" value="true"> Fall Family Kickoff
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="christmasparty" value=" true"> Christmas Party 
+			  <input type="checkbox" id="christmasparty" value="true"> Christmas Party 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="robotics" value=" true"> Robotics
+			  <input type="checkbox" id="robotics" value="true"> Robotics
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="schoolpictures" value=" true">School Pictures
+			  <input type="checkbox" id="schoolpictures" value="true">School Pictures
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="cyfaerozone" value=" true"> CYF Aerozone 
+			  <input type="checkbox" id="cyfaerozone" value="true"> CYF Aerozone 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="sportsaturdays" value=" true"> Sport&rsquo;s Saturdays
+			  <input type="checkbox" id="sportsaturdays" value="true"> Sport&rsquo;s Saturdays
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="yearbook" value=" true">Year Book
+			  <input type="checkbox" id="yearbook" value="true">Year Book
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="springsquaredance" value=" true"> Spring Square Dance 
+			  <input type="checkbox" id="springsquaredance" value="true"> Spring Square Dance 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="flagfootball" value=" true"> Flag Football (Sept-Oct)
+			  <input type="checkbox" id="flagfootball" value="true"> Flag Football (Sept-Oct)
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="usedbooksale" value=" true">Used Book Sale
+			  <input type="checkbox" id="usedbooksale" value="true">Used Book Sale
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="banquet" value=" true"> Banquet 
+			  <input type="checkbox" id="banquet" value="true"> Banquet 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="soccer" value=" true"> Soccer (Oct-Nov)
+			  <input type="checkbox" id="soccer" value="true"> Soccer (Oct-Nov)
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="momtea" value=" true">Mom&rsquo;s Tea
+			  <input type="checkbox" id="momtea" value="true">Mom&rsquo;s Tea
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="seniorsponsor" value=" true"> Senior Sponsor (couples only) 
+			  <input type="checkbox" id="seniorsponsor" value="true"> Senior Sponsor (couples only) 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="basketball" value=" true"> Basketball (Jan-Feb)
+			  <input type="checkbox" id="basketball" value="true"> Basketball (Jan-Feb)
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="chessclub" value=" true">Chess Club
+			  <input type="checkbox" id="chessclub" value="true">Chess Club
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="senioractivities" value=" true"> Senior Class Activities 
+			  <input type="checkbox" id="senioractivities" value="true"> Senior Class Activities 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="kickballfrisbee" value=" true"> Kickball/Ultimate Frisbee (Feb-Mar)
+			  <input type="checkbox" id="kickballfrisbee" value="true"> Kickball/Ultimate Frisbee (Feb-Mar)
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="debateclub" value=" true">Debate Club
+			  <input type="checkbox" id="debateclub" value="true">Debate Club
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="hsgraduation" value=" true"> High School Graduation 
+			  <input type="checkbox" id="hsgraduation" value="true"> High School Graduation 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="tennis" value=" true"> Tennis (Mar-Apr)
+			  <input type="checkbox" id="tennis" value="true"> Tennis (Mar-Apr)
 			</label>
 		</div>
 			<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="journalismclub" value=" true">Journalism Club
+			  <input type="checkbox" id="journalismclub" value="true">Journalism Club
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="nineelevinactivites" value=" true"> 9 <sup> th </sup>  - 11 <sup> th </sup>  Grade Activities 
+			  <input type="checkbox" id="nineelevinactivites" value="true"> 9 <sup> th </sup>  - 11 <sup> th </sup>  Grade Activities 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="fundraising" value=" true"> Fund Raising
+			  <input type="checkbox" id="fundraising" value="true"> Fund Raising
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="findartsfaire" value=" true">Fine Arts Faire
+			  <input type="checkbox" id="findartsfaire" value="true">Fine Arts Faire
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="juniorhighactivities" value=" true"> Junior High Grade Activities
+			  <input type="checkbox" id="juniorhighactivities" value="true"> Junior High Grade Activities
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="mentor" value=" true"> Mentor/mentoring
+			  <input type="checkbox" id="mentor" value="true"> Mentor/mentoring
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="dramaclub" value=" true">Drama Club
+			  <input type="checkbox" id="dramaclub" value="true">Drama Club
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="elementaryactivities" value=" true"> Elementary Grade Activities
+			  <input type="checkbox" id="elementaryactivities" value="true"> Elementary Grade Activities
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="eighthgraduation" value=" true"> 8 <sup> th </sup>  Grade Graduation
+			  <input type="checkbox" id="eighthgraduation" value="true"> 8 <sup> th </sup>  Grade Graduation
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="sciencefaire" value=" true">Science Faire &shy;&shy;&shy;
+			  <input type="checkbox" id="sciencefaire" value="true">Science Faire &shy;&shy;&shy;
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="helpissueshs" value=" true"> Help with High School Issues
+			  <input type="checkbox" id="helpissueshs" value="true"> Help with High School Issues
 			</label>
 		</div>
 		<div class="col-md-4 columns">&nbsp;</div>	
@@ -996,7 +1000,7 @@
 	</h3>
 	<table>
 		<tbody id="positions" class="container-fluid">
-			 <div class="row board">
+			 <div class="row">
 				<div class="col-md-4 columns">
 
 					<p><strong>President/Secretary:</strong></p>
@@ -1005,19 +1009,22 @@
 					<p>Fresno, CA 93726</p>
 					<p>(559)225-8212</p>
 					<p><a>yearbook@chefa.org</a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 					<p><strong>Membership Directors:</strong></p>
 					<p><strong>Position available</strong></p>
 					<p><a>membership@chefa.org</a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 					<p><strong>Finance Directors:</strong></p>
 					<p><strong>Position available</strong></p>
 					<p><a>treasurer@chefa.org</a></p>
+					<p><br></p>
 				</div>
 			</div>	
-			<div class="row board"> 
+			<div class="row"> 
 				<div class="col-md-4 columns">
 					<p><strong>New Membership:</strong></p>
 					<p><strong>Craig &amp; Elizabeth Hiett</strong></p>
@@ -1025,6 +1032,7 @@
 					<p>Fresno, CA 93720</p>
 					<p>(559) 323-1712</p>
 					<p><a>hietts@chefa.org</a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 					<p><strong>CYF Directors:</strong></p>
@@ -1032,6 +1040,7 @@
 					<p>9135 E North Ave</p>
 					<p>Sanger, CA 93657</p>
 					<p><a>CYF@chefa.org</a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">&nbsp;</div>
 			 </div>
@@ -1040,11 +1049,12 @@
 	<h3><strong>Other Leadership Positions:</strong></h3>
 	<table>
 		<tbody id="positions" class="container-fluid">
-			 <div class="row board">
+			 <div class="row">
 				<div class="col-md-4 columns">
 					<p><strong>Newsletter Editor</strong></p>
 					<p><strong>Emily Baker</strong></p>
 					<p><a><strong>newsletter@chefa.org</strong></a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 
@@ -1052,55 +1062,65 @@
 					<p><strong>Naomi Kent</strong></p> 
 					<p><strong>Deeply Rooted Photography</strong></p>
 					<p><a><strong>naomi@deeplyrootedphotography.com</strong></a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 					<p><strong>Webmaster</strong></p>
 					<p><strong>Open</strong></p>
+					<p><br></p>
 				</div>
 			</div>
-			<div class="row board">
+			<div class="row">
 				<div class="col-md-4 columns">
 					<p><strong>Sports Saturday Coordinator</strong></p>
 					<p><strong>Kevin Shields</strong></p>
 					<p><a>CYF@chefa.org</a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 					<p><strong>Alumni</strong></p>
 					<p><strong>Open</strong></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 					<p><strong>New Member Coordinator</strong></p>
 					<p><strong>Craig and Elizabeth Hiett </strong></p>
 					<p><a>hietts@chefa.org</a></p>
+					<p><br></p>
 				</div>
 			</div>
-			<div class="row board">
+			<div class="row">
 				<div class="col-md-4 columns">
 					<p><strong>Yearbook</strong></p>
 					<p><strong>Paula Hall</strong></p>
 					<p><a><strong>yearbook@chefa.org</strong></a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 					<p><strong>Considering Homeschooling</strong></p>
 					<p><strong>Elizabeth Hiett</strong></p>
 					<p><a><strong>hietts@chefa.org</strong></a></p>
+					<p><br></p>
 				</div>
 				<div class="col-md-4 columns">
 					<p><strong>History or Science Faire Coordinator </strong></p>
 					<p><strong>Ray &amp; Brooke Dressel</strong></p>
+					<p><br></p>
 				</div>
 			 </div>
-			 <div class="row board">
+			 <div class="row">
 				<div class="col-md-4 columns">
 					<p><strong>Creative Arts Faire Coordinator </strong></p>
 					<p><strong>Chuck and Anna Padilla</strong></p>
-					<p><a><strong>capsurf5@earthlink.net</strong></a></p>				
+					<p><a><strong>capsurf5@earthlink.net</strong></a></p>
+					<p><br></p>				
 				</div>
 				<div class="col-md-4 columns">&nbsp;</div>
 				<div class="col-md-4 columns">
 					<p><strong>Librarian</strong></p>
 					<p><strong>Robin Lee</strong></p>
 					<p><a>Leeadd123@aol.com</a></p>
+					<p><br></p>
 				</div>			 
 			 </div>
 

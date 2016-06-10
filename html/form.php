@@ -11,34 +11,33 @@
 	<h1 class="text-center">Membership Registration - Renewal 2016/2017</h1>
 	<h3 class="text-center">Member Information</h3>
 
-	<form class="form-inline">
+	<form class="form-inline" action="submit.php" method="post">
+
+
 	  <div class="form-group">
 	    <label for="familyLastName">Family Last Name:</label>
-	    <input type="text" class="form-control" id="familyLastName" placeholder="Family Last Name">
+	    <input type="text" class="form-control" name="familyLastName" placeholder="Family Last Name">
 	  </div>
 	  <div class="form-group">
 	    <label for="homePhone">Home Phone:</label>
-	    <input type="text" class="form-control" id="homePhone" placeholder="559-000-0000">
+	    <input type="text" class="form-control" name="homePhone" placeholder="559-000-0000">
 	  </div>
 	  <div class="form-group">
 	    <label for="email">Email</label>
-	    <input type="email" class="form-control" id="homeEmail" placeholder="jane.doe@example.com">
+	    <input type="email" class="form-control" name="homeEmail" placeholder="jane.doe@example.com">
 	  </div>
 	  <div class="form-group">
 	    <label for="address">Address:</label>
-	    <input type="text" class="form-control" id="address" placeholder="123 Street">
+	    <input type="text" class="form-control" name="address" placeholder="123 Street">
 	  </div>
 	  <div class="form-group">
-	    <label for="city">Address:</label>
-	    <input type="text" class="form-control" id="city" placeholder="City">
+	    <label for="city">City:</label>
+	    <input type="text" class="form-control" name="city" placeholder="City">
 	  </div>
 	  <div class="form-group">
 	    <label for="zip">Zip Code:</label>
-	    <input type="text" class="form-control" id="zip" placeholder="12345">
+	    <input type="text" class="form-control" name="zip" placeholder="12345">
 	  </div>
-
-
-
 
 	<p>In order to serve you better, CHEFA is requesting information for each family parent 
 		and K-12 student. This information is only for the use of CHEFA and will not be shared 
@@ -51,44 +50,42 @@
 
 		  <div class="form-group">
 		    <label for="lastName">Last Name:</label>
-		    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+		    <input type="text" class="form-control" name="lastName" placeholder="Last Name">
 		  </div>
 		  <div class="form-group">
 		    <label for="firstName">First Name:</label>
-		    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+		    <input type="text" class="form-control" name="firstName" placeholder="First Name">
 		  </div>
 		  <div class="form-group">
 		    <label for="grade">grade:</label>
-		    <input type="text" class="form-control" id="grade" placeholder="0">
+		    <input type="text" class="form-control" name="grade" placeholder="5">
 		  </div>
 		  <div class="form-group">
 		    <label for="homePhone">Mobile Phone:</label>
-		    <input type="text" class="form-control" id="homePhone" placeholder="559-000-0000">
+		    <input type="text" class="form-control" name="mobilePhone" placeholder="559-000-0000">
 		  </div>
 		  <div class="form-group">
 		    <label for="email">Email</label>
-		    <input type="email" class="form-control" id="homeEmail" placeholder="jane.doe@example.com">
+		    <input type="email" class="form-control" name="email" placeholder="jane.doe@example.com">
 		  </div>
-
 	</tbody>
-
 	<h3><strong>Please check one and complete the information that applies to your school / group: </strong></h3>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="ips" value="true" checked>
+		    <input type="radio" name="optionsRadios" id="ips" value="1" checked>
 		    IPS-Individual Private School (One family filing own Private School Affidavit)
 		  </label>
 		</div>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="pssp" value="true">
+		    <input type="radio" name="optionsRadios" id="pssp" value="1">
 		    PSSP-Private School Satellite Program (One private school affidavit is filed on behalf 
 		    of multiple member families)
 		  </label>
 		</div>
 		<div class="radio">
 		  <label>
-		    <input type="radio" name="optionsRadios" id="supportgroup" value="true">
+		    <input type="radio" name="optionsRadios" id="supportgroup" value="1">
 		    SG-Support Group (Each family is responsible for filing its own affidavit, but support 
 		    is offered to member families)
 		  </label>
@@ -96,13 +93,12 @@
 
 		  <div class="form-group">
 		    <label for="PsspGroup">PSSP/Group Name:</label>
-		    <input type="text" class="form-control" id="PsspGroup" placeholder="PSSP/Group Name">
+		    <input type="text" class="form-control" name="PsspGroup" placeholder="PSSP/Group Name">
 		  </div>
 		  <div class="form-group">
 		    <label for="administrator">Administrator:</label>
-		    <input type="text" class="form-control" id="administrator" placeholder="Administrator">
+		    <input type="text" class="form-control" name="administrator" placeholder="Administrator">
 		  </div>
-
 	<ol>
 		<p><em>As filed with the State of California </em></p>
 		<h3><strong>Membership Agreement</strong></h3>
@@ -124,7 +120,6 @@
 		</li>
 		<li>I understand that I am solely responsible for my children&rsquo;s conduct at ALL CHEFA events.</li>
 	</ol>
-
 		<h3><strong>Parents and Students</strong></h3>
 	<ol>
 		<li>I/we have read and agree to honor the CHEFA CODE OF CONDUCT AND DRESS.</li>
@@ -136,35 +131,30 @@
 			to myself, my family, or property.
 		</li>
 	</ol>
-
-			  <div class="form-group">
-			    <label for="parentSignature">Parent Signature:</label>
-			    <input type="text" class="form-control" id="parentSignature" placeholder="Type Name">
-			  </div>
-			  <div class="form-group">
-			    <label for="date">Date:</label>
-			    <input type="text" class="form-control" id="date" placeholder="Date">
-			  </div>
-
-
-
+		  <div class="form-group">
+		    <label for="parentSignature">Parent Signature:</label>
+		    <input type="text" class="form-control" name="parentSignature" placeholder="Type Name">
+		  </div>
+		  <div class="form-group">
+		    <label for="date">Date:</label>
+		    <input type="text" class="form-control" name="date" placeholder="Date">
+		  </div>
 		  <div class="form-group">
 		    <label for="studentname">Student Name:</label>
-		    <input type="text" class="form-control" id="studentname" placeholder="Type Name">
+		    <input type="text" class="form-control" name="studentname" placeholder="Type Name">
 		  </div>
 		  <div class="form-group">
 		    <label for="studentgrade">Grade:</label>
-		    <input type="text" class="form-control" id="studentgrade" placeholder="Grade">
+		    <input type="text" class="form-control" name="studentgrade" placeholder="Grade">
 		  </div>
 		  <div class="form-group">
 		    <label for="studentsignature">Student Signature:</label>
-		    <input type="text" class="form-control" id="studentsignature" placeholder="Sign Name">
+		    <input type="text" class="form-control" name="studentsignature" placeholder="Sign Name">
 		  </div>
 		  <div class="form-group">
 		    <label for="studentdate">Date:</label>
-		    <input type="text" class="form-control" id="studentdate" placeholder="Date">
+		    <input type="text" class="form-control" name="studentdate" placeholder="Date">
 		  </div>
-
 
 	<h3><strong>Membership Benefits</strong></h3>
 	<p><strong>Membership dues allow you to receive an HSLDA discount and help to support the following CHEFA activities 
@@ -190,7 +180,7 @@
 		</tbody>
 	</table>
 
-	<p>   (Activity availability may vary based on member volunteer planning and participation)</p>
+	<p>(Activity availability may vary based on member volunteer planning and participation)</p>
 
 	<h3><strong>Volunteers</strong></h3>
 	<p><strong>Volunteer Sign-up Form - "We Would Just Love to Help!"</strong></p>
@@ -201,207 +191,243 @@
 		CHEFA strives to make available to its members, please fill out the form below. 
 		Listed below are activities that CHEFA has facilitated in the past but some do 
 		not currently have enough volunteers or are new ones that CHEFA would like to offer.
-	</p>
 
+	</p>
+	
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="leadership" value="true"> Leadership
+			  <input type="hidden" name="leadership" value="0">
+			  <input type="checkbox" name="leadership" value="1"> Leadership
+
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="cyfact" value="true"> CYF Activities 
+			  <input type="hidden" name="cyfact" value="0">
+			  <input type="checkbox" name="cyfact" value="1"> CYF Activities 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="alumniact" value="true"> Alumni Activities
+				<input type="hidden" name="alumniact" value="0">
+			  	<input type="checkbox" name="alumniact" value="1"> Alumni Activities
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="considerhomeschool" value="">Considering Homeschooling
+				<input type="hidden" name="considerhomeschool" value="0">
+			  <input type="checkbox" name="considerhomeschool" value="1">Considering Homeschooling
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="bonfire" value="true"> Bonfire 
+				<input type="hidden" name="bonfire" value="0">
+			  <input type="checkbox" name="bonfire" value="1"> Bonfire 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="locanlibrary" value="true"> Locan Library
+				<input type="hidden" name="locanlibrary" value="0">
+			  <input type="checkbox" name="locanlibrary" value="1"> Locan Library
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="fallfamilykickoff" value="true"> Fall Family Kickoff
+				<input type="hidden" name="fallfamilykickoff" value="0">
+			  <input type="checkbox" name="fallfamilykickoff" value="1"> Fall Family Kickoff
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="christmasparty" value="true"> Christmas Party 
+				<input type="hidden" name="christmasparty" value="0">
+			  <input type="checkbox" name="christmasparty" value="1"> Christmas Party 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="robotics" value="true"> Robotics
+				<input type="hidden" name="robotics" value="0">
+			  <input type="checkbox" name="robotics" value="1"> Robotics
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="schoolpictures" value="true">School Pictures
+				<input type="hidden" name="schoolpictures" value="0">
+			  <input type="checkbox" name="schoolpictures" value="1">School Pictures
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="cyfaerozone" value="true"> CYF Aerozone 
+				<input type="hidden" name="cyfaerozone" value="0">
+			  <input type="checkbox" name="cyfaerozone" value="1"> CYF Aerozone 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="sportsaturdays" value="true"> Sport&rsquo;s Saturdays
+				<input type="hidden" name="sportsaturdays" value="0">
+			  <input type="checkbox" name="sportsaturdays" value="1"> Sport&rsquo;s Saturdays
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="yearbook" value="true">Year Book
+				<input type="hidden" name="yearbook" value="0">
+			  <input type="checkbox" name="yearbook" value="1">Year Book
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="springsquaredance" value="true"> Spring Square Dance 
+				<input type="hidden" name="springsquaredance" value="0">
+			  <input type="checkbox" name="springsquaredance" value="1"> Spring Square Dance 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="flagfootball" value="true"> Flag Football (Sept-Oct)
+				<input type="hidden" name="flagfootball" value="0">
+			  <input type="checkbox" name="flagfootball" value="1"> Flag Football (Sept-Oct)
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="usedbooksale" value="true">Used Book Sale
+				<input type="hidden" name="usedbooksale" value="0">
+			  <input type="checkbox" name="usedbooksale" value="1">Used Book Sale
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="banquet" value="true"> Banquet 
+				<input type="hidden" name="banquet" value="0">
+			  <input type="checkbox" name="banquet" value="1"> Banquet 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="soccer" value="true"> Soccer (Oct-Nov)
+				<input type="hidden" name="soccer" value="0">
+			  <input type="checkbox" name="soccer" value="1"> Soccer (Oct-Nov)
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="momtea" value="true">Mom&rsquo;s Tea
+				<input type="hidden" name="momtea" value="0">
+			  <input type="checkbox" name="momtea" value="1">Mom&rsquo;s Tea
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="seniorsponsor" value="true"> Senior Sponsor (couples only) 
+				<input type="hidden" name="seniorsponsor" value="0">
+			  <input type="checkbox" name="seniorsponsor" value="1"> Senior Sponsor (couples only) 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="basketball" value="true"> Basketball (Jan-Feb)
+				<input type="hidden" name="basketball" value="0">
+			  <input type="checkbox" name="basketball" value="1"> Basketball (Jan-Feb)
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="chessclub" value="true">Chess Club
+				<input type="hidden" name="chessclub" value="0">
+			  <input type="checkbox" name="chessclub" value="1">Chess Club
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="senioractivities" value="true"> Senior Class Activities 
+				<input type="hidden" name="senioractivities" value="0">
+			  <input type="checkbox" name="senioractivities" value="1"> Senior Class Activities 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="kickballfrisbee" value="true"> Kickball/Ultimate Frisbee (Feb-Mar)
+				<input type="hidden" name="kickballfrisbee" value="0">
+			  <input type="checkbox" name="kickballfrisbee" value="1"> Kickball/Ultimate Frisbee (Feb-Mar)
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="debateclub" value="true">Debate Club
+				<input type="hidden" name="debateclub" value="0">
+			  <input type="checkbox" name="debateclub" value="1">Debate Club
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="hsgraduation" value="true"> High School Graduation 
+				<input type="hidden" name="hsgraduation" value="0">
+			  <input type="checkbox" name="hsgraduation" value="1"> High School Graduation 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="tennis" value="true"> Tennis (Mar-Apr)
+				<input type="hidden" name="tennis" value="0">
+			  <input type="checkbox" name="tennis" value="1"> Tennis (Mar-Apr)
 			</label>
 		</div>
 			<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="journalismclub" value="true">Journalism Club
+				<input type="hidden" name="journalismclub" value="0">
+			  <input type="checkbox" name="journalismclub" value="1">Journalism Club
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="nineelevinactivites" value="true"> 9 <sup> th </sup>  - 11 <sup> th </sup>  Grade Activities 
+				<input type="hidden" name="nineelevinactivites" value="0">
+			  <input type="checkbox" name="nineelevinactivites" value="1"> 9 <sup> th </sup>  - 11 <sup> th </sup>  Grade Activities 
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="fundraising" value="true"> Fund Raising
+				<input type="hidden" name="fundraising" value="0">
+			  <input type="checkbox" name="fundraising" value="1"> Fund Raising
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="findartsfaire" value="true">Fine Arts Faire
+				<input type="hidden" name="ineartsfaire" value="0">
+			  <input type="checkbox" name="fineartsfaire" value="1">Fine Arts Faire
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="juniorhighactivities" value="true"> Junior High Grade Activities
+				<input type="hidden" name="juniorhighactivities" value="0">
+			  <input type="checkbox" name="juniorhighactivities" value="1"> Junior High Grade Activities
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="mentor" value="true"> Mentor/mentoring
+				<input type="hidden" name="mentor" value="0">
+			  <input type="checkbox" name="mentor" value="1"> Mentor/mentoring
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="dramaclub" value="true">Drama Club
+				<input type="hidden" name="dramaclub" value="0">
+			  <input type="checkbox" name="dramaclub" value="1">Drama Club
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="elementaryactivities" value="true"> Elementary Grade Activities
+				<input type="hidden" name="elementaryactivitiesr" value="0">
+			  <input type="checkbox" name="elementaryactivities" value="1"> Elementary Grade Activities
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="eighthgraduation" value="true"> 8 <sup> th </sup>  Grade Graduation
+				<input type="hidden" name="eighthgraduation" value="0">
+			  <input type="checkbox" name="eighthgraduation" value="1"> 8 <sup> th </sup>  Grade Graduation
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="sciencefaire" value="true">Science Faire &shy;&shy;&shy;
+				<input type="hidden" name="sciencefaire" value="0">
+			  <input type="checkbox" name="sciencefaire" value="1">Science Faire &shy;&shy;&shy;
 			</label>
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-			  <input type="checkbox" id="helpissueshs" value="true"> Help with High School Issues
+				<input type="hidden" name="helpissueshs" value="0">
+			  <input type="checkbox" name="helpissueshs" value="1"> Help with High School Issues
 			</label>
 		</div>
 		<div class="col-md-4 columns">&nbsp;</div>	
 	</form>
-
-
 		<label value="newIdea">New Ideas
 			<input type="text">
-		</label>
-
-	
+		</label>	
 	<p><br /><br /></p>
 	<button type="submit" class="btn btn-default">Submit</button>
 	<p><br /><br /></p>
@@ -1122,9 +1148,7 @@
 					<p><a>Leeadd123@aol.com</a></p>
 					<p><br></p>
 				</div>			 
-			 </div>
-
-			 
+			 </div>			 
 		</tbody>
 	</table>
 	<p>When making calls to the above-named people <strong>please call after 2:00 p.m</strong>.</p>

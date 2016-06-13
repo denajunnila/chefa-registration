@@ -54,11 +54,11 @@ Zip: <input type="text" name="zip"><br>
 	$address = $_POST['address'];
 	$city = $_POST['city'];
 	$zip = $_POST['zip'];
-	$lastName = $_POST['lastName'];
-	$firstName = $_POST['firstName'];
-	$grade = $_POST['grade'];
-	$mobilePhone = $_POST['mobilePhone'];
-	$email = $_POST['email'];
+	$lastName = $_POST['fatherLastName'];
+	$firstName = $_POST['fatherFirstName'];
+	$grade = $_POST['fatherEmail'];
+	$mobilePhone = $_POST['fatherMobilePhone'];
+	$email = $_POST['fatherEmail'];
 	$ips = $_POST['optionsRadios'];
 	$pssp = $_POST['optionsRadios'];
 	$supportgroup = $_POST['optionsRadios'];
@@ -75,32 +75,32 @@ Zip: <input type="text" name="zip"><br>
 	$schoolpictures = $_POST['schoolpictures'];
 	$cyfaerozone = $_POST['cyfaerozone'];
 	$sportsaturdays = $_POST['sportsaturdays'];
-	// $yearbook = $_POST['yearbook'];
-	// $springsquaredance = $_POST['springsquaredance'];
-	// $flagfootball = $_POST['flagfootball'];
-	// $usedbooksale = $_POST['usedbooksale'];
-	// $banquet = $_POST['banquet'];
-	// $soccer = $_POST['soccer'];
-	// $momtea = $_POST['momtea'];
-	// $seniorsponsor = $_POST['seniorsponsor'];
-	// $basketball = $_POST['basketball'];
-	// $chessclub = $_POST['chessclub'];
-	// $senioractivities = $_POST['senioractivities'];
-	// $kickballfrisbee = $_POST['kickballfrisbee'];
-	// $debateclub = $_POST['debateclub'];
-	// $hsgraduation = $_POST['hsgraduation'];
-	// $tennis = $_POST['tennis'];
-	// $journalismclub = $_POST['journalismclub'];
-	// $nineelevinactivites = $_POST['nineelevinactivites'];
-	// $fundraising = $_POST['fundraising'];
-	// $fineartsfaire = $_POST['fineartsfaire'];
-	// $juniorhighactivities = $_POST['juniorhighactivities'];
-	// $mentor = $_POST['mentor'];
-	// $dramaclub = $_POST['dramaclub'];
-	// $elementaryactivities = $_POST['elementaryactivities'];
-	// $eighthgraduation = $_POST['eighthgraduation'];
-	// $sciencefaire = $_POST['sciencefaire'];
-	// $helpissueshs = $_POST['helpissueshs'];
+	$yearbook = $_POST['yearbook'];
+	$springsquaredance = $_POST['springsquaredance'];
+	$flagfootball = $_POST['flagfootball'];
+	$usedbooksale = $_POST['usedbooksale'];
+	$banquet = $_POST['banquet'];
+	$soccer = $_POST['soccer'];
+	$momtea = $_POST['momtea'];
+	$seniorsponsor = $_POST['seniorsponsor'];
+	$basketball = $_POST['basketball'];
+	$chessclub = $_POST['chessclub'];
+	$senioractivities = $_POST['senioractivities'];
+	$kickballfrisbee = $_POST['kickballfrisbee'];
+	$debateclub = $_POST['debateclub'];
+	$hsgraduation = $_POST['hsgraduation'];
+	$tennis = $_POST['tennis'];
+	$journalismclub = $_POST['journalismclub'];
+	$nineelevinactivites = $_POST['nineelevinactivites'];
+	$fundraising = $_POST['fundraising'];
+	$fineartsfaire = $_POST['fineartsfaire'];
+	$juniorhighactivities = $_POST['juniorhighactivities'];
+	$mentor = $_POST['mentor'];
+	$dramaclub = $_POST['dramaclub'];
+	$elementaryactivities = $_POST['elementaryactivities'];
+	$eighthgraduation = $_POST['eighthgraduation'];
+	$sciencefaire = $_POST['sciencefaire'];
+	$helpissueshs = $_POST['helpissueshs'];
 	// $newIdea = $_POST['newIdea'];
 
 
@@ -114,11 +114,21 @@ Zip: <input type="text" name="zip"><br>
 	$sql = "INSERT INTO registrations (id, familyLastName, homePhone, homeEmail, address, city, zip,
 		 	lastName, firstName, grade, mobilePhone, email, ips, pssp, supportgroup, 
 		 	leadership, cyfact, alumniact, considerhomeschool, bonfire, locanlibrary,
-		 	fallfamilykickoff, robotics, schoolpictures, cyfaerozone, sportsaturdays ) 
+		 	fallfamilykickoff, robotics, schoolpictures, cyfaerozone, sportsaturdays, yearbook,
+		 	springsquaredance, flagfootball, usedbooksale, banquet, soccer, momtea, seniorsponsor,
+		 	basketball, chessclub, senioractivities, kickballfrisbee, debateclub, hsgraduation,
+		 	tennis, journalismclub, nineelevinactivites, fundraising, fineartsfaire, juniorhighactivities,
+		 	dramaclub, elementaryactivities, eighthgraduation, sciencefaire,
+		 	helpissueshs) 
 		VALUES (NULL, '$familyLastName', '$homePhone', '$homeEmail', '$address', '$city', '$zip', 
 			'$lastName', '$firstName', '$grade', '$mobilePhone', '$email', '$ips', '$ips', '$ips', 
 			'$leadership', '$cyfact', '$alumniact', '$considerhomeschool', '$bonfire', '$locanlibrary',
-			'$fallfamilykickoff', '$robotics', '$schoolpictures', '$cyfaerozone', '$sportsaturdays')";
+			'$fallfamilykickoff', '$robotics', '$schoolpictures', '$cyfaerozone', '$sportsaturdays', '$yearbook',
+			'$springsquaredance', '$flagfootball', '$usedbooksale', '$banquet', '$soccer', '$momtea', '$seniorsponsor',
+			'$basketball', '$chessclub', '$senioractivities', '$kickballfrisbee', '$debateclub', '$hsgraduation',
+			'$tennis', '$journalismclub', '$nineelevinactivites', '$fundraising', '$fineartsfaire', '$juniorhighactivities',
+			'$dramaclub', '$elementaryactivities', '$eighthgraduation', '$sciencefaire',
+			'$helpissueshs')";
 
 	if ($conn->query($sql) === TRUE) {
 	    echo "New record created successfully";
@@ -128,30 +138,3 @@ Zip: <input type="text" name="zip"><br>
 
 
 
-	// $yearbook = $_POST['yearbook'];
-	// $springsquaredance = $_POST['springsquaredance'];
-	// $flagfootball = $_POST['flagfootball'];
-	// $usedbooksale = $_POST['usedbooksale'];
-	// $banquet = $_POST['banquet'];
-	// $soccer = $_POST['soccer'];
-	// $momtea = $_POST['momtea'];
-	// $seniorsponsor = $_POST['seniorsponsor'];
-	// $basketball = $_POST['basketball'];
-	// $chessclub = $_POST['chessclub'];
-	// $senioractivities = $_POST['senioractivities'];
-	// $kickballfrisbee = $_POST['kickballfrisbee'];
-	// $debateclub = $_POST['debateclub'];
-	// $hsgraduation = $_POST['hsgraduation'];
-	// $tennis = $_POST['tennis'];
-	// $journalismclub = $_POST['journalismclub'];
-	// $nineelevinactivites = $_POST['nineelevinactivites'];
-	// $fundraising = $_POST['fundraising'];
-	// $fineartsfaire = $_POST['fineartsfaire'];
-	// $juniorhighactivities = $_POST['juniorhighactivities'];
-	// $mentor = $_POST['mentor'];
-	// $dramaclub = $_POST['dramaclub'];
-	// $elementaryactivities = $_POST['elementaryactivities'];
-	// $eighthgraduation = $_POST['eighthgraduation'];
-	// $sciencefaire = $_POST['sciencefaire'];
-	// $helpissueshs = $_POST['helpissueshs'];
-	// $newIdea = $_POST['newIdea'];

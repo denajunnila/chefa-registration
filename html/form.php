@@ -5,6 +5,23 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!-- Add additional student  -->
+	<script>
+	$(document).ready(function(){
+
+	    $("#addChild").click(function(){
+	        $("button").before(
+	        	'<div class="form-group"><label for="student[0][lastName]">Last Name:</label><input type="text" class="form-control" name="student[0][lastName]" placeholder="Student Last Name"></div><div class="form-group"><label for="student[0][firstName]">First Name:</label><input type="text" class="form-control" name="student[0][firstName]" placeholder="Student First Name"></div><div class="form-group"><label for="student[0][grade]">Grade:</label><input type="text" class="form-control" name="student[0][grade]" placeholder="5"></div><div class="form-group"><label for="student[0][mobilePhone]">Mobile Phone:</label><input type="text" class="form-control" name="student[0][mobilePhone]" placeholder="559-000-0000"></div><div class="form-group"><label for="student[0][email]">Email</label><input type="email" class="form-control" name="student[0][email]" placeholder="john.doe@example.com"></div><br>'
+	        );
+	    });
+	$("#addChild").click(function(){
+		        $(".stuSignature").after('<div><div class="form-group studentSignature"><label for="studentname">Student Name:</label><input type="text" class="form-control" name="studentname" placeholder="Type Name"></div><div class="form-group"><label for="studentgrade">Grade:</label><input type="text" class="form-control" name="studentgrade" placeholder="Grade"></div><div class="form-group"><label for="studentsignature">Student Signature:</label><input type="text" class="form-control" name="studentsignature" placeholder="Sign Name"></div><div class="form-group"><label for="studentdate">Date:</label><input type="text" class="form-control" name="studentdate" placeholder="Date"></div></div>'
+         );
+    });
+
+	});
+	</script>
 </head>
 <body>
 	<h2 class="text-center"><em>Christian Home Educators of the Fresno Area (CHEFA)</em></h2>
@@ -46,29 +63,77 @@
 		information does not need to be rewritten).
 	</p>
 
-	<tbody>
+	<fieldset>
+		<div>
+		<h3>Father</h3>
+			<div class="form-group">
+			    <label for="fatherLastName">Last Name:</label>
+			    <input type="text" class="form-control" name="fatherLastName" placeholder="Father Last Name">		
+			</div>
+		  	<div class="form-group">
+			    <label for="fatherFirstName">First Name:</label>
+			    <input type="text" class="form-control" name="fatherFirstName" placeholder="Father First Name">
+			</div>
+		  	<div class="form-group">
+			    <label for="fatherMobilePhone">Mobile Phone:</label>
+			    <input type="text" class="form-control" name="fatherMobilePhone" placeholder="559-000-0000">
+			</div>
+		  	<div class="form-group">
+			   <label for="fatherEmail">Email</label>
+			    <input type="email" class="form-control" name="fatherEmail" placeholder="john.doe@example.com">
+			</div>
+		</div>
+		<div>
+		<h3>Mother</h3>
+			<div class="form-group">
+			    <label for="motherLastName">Last Name:</label>
+			    <input type="text" class="form-control" name="motherLastName" placeholder="Mother Last Name">		
+			</div>
+		  	<div class="form-group">
+		     	<label for="motherFirstName">First Name:</label>
+			    <input type="text" class="form-control" name="motherFirstName" placeholder="Mother First Name">
+			</div>
+		  	<div class="form-group">    
+			    <label for="motherMobilePhone">Mobile Phone:</label>
+			    <input type="text" class="form-control" name="motherMobilePhone" placeholder="559-000-0000">
+			</div>
+		  	<div class="form-group">    
+			    <label for="motherEmail">Email</label>
+			    <input type="email" class="form-control" name="motherEmail" placeholder="john.doe@example.com">
+			</div>
+		</div>
+		<div>
+			<h3>Children</h3>
+			<div class="form-group">
+			    <label for="student[0][lastName]">Last Name:</label>
+			    <input type="text" class="form-control" name="student[0][lastName]" placeholder="Student Last Name">		
+			</div>
+		  	<div class="form-group">
+			    <label for="student[0][firstName]">First Name:</label>
+			    <input type="text" class="form-control" name="student[0][firstName]" placeholder="Student First Name">
+			</div>
+		  	<div class="form-group">    
+			    <label for="student[0][grade]">Grade:</label>
+			    <input type="text" class="form-control" name="student[0][grade]" placeholder="5">
+			 </div>
+		 	<div class="form-group">  
+			    <label for="student[0][mobilePhone]">Mobile Phone:</label>
+			    <input type="text" class="form-control" name="student[0][mobilePhone]" placeholder="559-000-0000">
+			</div>
+		  	<div class="form-group">    
+			    <label for="student[0][email]">Email</label>
+			    <input type="email" class="form-control" name="student[0][email]" placeholder="john.doe@example.com">
+			</div>
+		</div>
 
-		  <div class="form-group">
-		    <label for="lastName">Last Name:</label>
-		    <input type="text" class="form-control" name="lastName" placeholder="Last Name">
-		  </div>
-		  <div class="form-group">
-		    <label for="firstName">First Name:</label>
-		    <input type="text" class="form-control" name="firstName" placeholder="First Name">
-		  </div>
-		  <div class="form-group">
-		    <label for="grade">grade:</label>
-		    <input type="text" class="form-control" name="grade" placeholder="5">
-		  </div>
-		  <div class="form-group">
-		    <label for="homePhone">Mobile Phone:</label>
-		    <input type="text" class="form-control" name="mobilePhone" placeholder="559-000-0000">
-		  </div>
-		  <div class="form-group">
-		    <label for="email">Email</label>
-		    <input type="email" class="form-control" name="email" placeholder="jane.doe@example.com">
-		  </div>
-	</tbody>
+		<!-- Adding additional student -->
+		<div>
+			<button type="button" name="addChild" value="addChild" class="btn btn-default" id="addChild">Additional Child</button>
+
+		</div>
+
+
+	</fieldset>
 	<h3><strong>Please check one and complete the information that applies to your school / group: </strong></h3>
 		<div class="radio">
 		  <label>
@@ -130,7 +195,7 @@
 		<li>I/we agree to hold CHEFA, its leadership, and its members harmless in the event of any damages or injuries 
 			to myself, my family, or property.
 		</li>
-	</ol>
+	</ol><div>
 		  <div class="form-group">
 		    <label for="parentSignature">Parent Signature:</label>
 		    <input type="text" class="form-control" name="parentSignature" placeholder="Type Name">
@@ -139,6 +204,8 @@
 		    <label for="date">Date:</label>
 		    <input type="text" class="form-control" name="date" placeholder="Date">
 		  </div>
+		</div>
+		<div class="stuSignature">
 		  <div class="form-group">
 		    <label for="studentname">Student Name:</label>
 		    <input type="text" class="form-control" name="studentname" placeholder="Type Name">
@@ -155,7 +222,7 @@
 		    <label for="studentdate">Date:</label>
 		    <input type="text" class="form-control" name="studentdate" placeholder="Date">
 		  </div>
-
+		</div>
 	<h3><strong>Membership Benefits</strong></h3>
 	<p><strong>Membership dues allow you to receive an HSLDA discount and help to support the following CHEFA activities 
 		and benefits:</strong>
@@ -377,7 +444,7 @@
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-				<input type="hidden" name="ineartsfaire" value="0">
+				<input type="hidden" name="fineartsfaire" value="0">
 			  <input type="checkbox" name="fineartsfaire" value="1">Fine Arts Faire
 			</label>
 		</div>
@@ -401,7 +468,7 @@
 		</div>
 		<div class="col-md-4 columns">
 			<label class="checkbox-inline">
-				<input type="hidden" name="elementaryactivitiesr" value="0">
+				<input type="hidden" name="elementaryactivities" value="0">
 			  <input type="checkbox" name="elementaryactivities" value="1"> Elementary Grade Activities
 			</label>
 		</div>
@@ -429,7 +496,7 @@
 			<input type="text">
 		</label>	
 	<p><br /><br /></p>
-	<button type="submit" class="btn btn-default">Submit</button>
+	<button type="submit" name="mainSubmit" value="submit"class="btn btn-default">Submit</button>
 	<p><br /><br /></p>
 	<p>CHEFA Youth Fellowship (CYF) offers additional opportunities for CHEFA member students 
 		in Grades 7 thru 12 to fellowship and build long-lasting relationships. These activities 

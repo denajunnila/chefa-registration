@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
 	<!-- Add additional student  -->
 	<script>
@@ -39,27 +40,27 @@
 
 	  <div class="form-group">
 	    <label for="familyLastName">Family Last Name:</label>
-	    <input type="text" class="form-control" name="familyLastName" placeholder="Family Last Name">
+	    <input type="text" class="form-control" name="familyLastName" required="true" placeholder="Family Last Name">
 	  </div>
 	  <div class="form-group">
 	    <label for="homePhone">Home Phone:</label>
-	    <input type="text" class="form-control" name="homePhone" placeholder="559-000-0000">
+	    <input type="text" class="form-control" name="homePhone" required="true" placeholder="559-000-0000">
 	  </div>
 	  <div class="form-group">
 	    <label for="email">Email</label>
-	    <input type="email" class="form-control" name="homeEmail" placeholder="jane.doe@example.com">
+	    <input type="email" class="form-control" name="homeEmail" required="true" placeholder="jane.doe@example.com">
 	  </div>
 	  <div class="form-group">
 	    <label for="address">Address:</label>
-	    <input type="text" class="form-control" name="address" placeholder="123 Street">
+	    <input type="text" class="form-control" name="address" required="true" placeholder="123 Street">
 	  </div>
 	  <div class="form-group">
 	    <label for="city">City:</label>
-	    <input type="text" class="form-control" name="city" placeholder="City">
+	    <input type="text" class="form-control" name="city" required="true" placeholder="City">
 	  </div>
 	  <div class="form-group">
 	    <label for="zip">Zip Code:</label>
-	    <input type="text" class="form-control" name="zip" placeholder="12345">
+	    <input type="text" class="form-control" name="zip" required="true" placeholder="12345">
 	  </div>
 
 	<p>In order to serve you better, CHEFA is requesting information for each family parent 

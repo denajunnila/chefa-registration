@@ -54,11 +54,14 @@ Zip: <input type="text" name="zip"><br>
 	$address = $_POST['address'];
 	$city = $_POST['city'];
 	$zip = $_POST['zip'];
-	$lastName = $_POST['fatherLastName'];
-	$firstName = $_POST['fatherFirstName'];
-	$grade = $_POST['fatherEmail'];
-	$mobilePhone = $_POST['fatherMobilePhone'];
-	$email = $_POST['fatherEmail'];
+	$fatherLastName = $_POST['fatherLastName'];
+	$fatherFirstName = $_POST['fatherFirstName'];
+	$fatherMobilePhone = $_POST['fatherMobilePhone'];
+	$fatherEmail = $_POST['motherEmail'];
+	$motherLastName = $_POST['motherLastName'];
+	$motherFirstName = $_POST['motherFirstName'];
+	$motherMobilePhone = $_POST['motherMobilePhone'];
+	$motherEmail = $_POST['fatherEmail'];
 	$ips = $_POST['optionsRadios'];
 	$pssp = $_POST['optionsRadios'];
 	$supportgroup = $_POST['optionsRadios'];
@@ -112,7 +115,8 @@ Zip: <input type="text" name="zip"><br>
 
 	// $sql = "INSERT INTO registrations (id, firstName, lastName, ips) VALUES (NULL, '$firstName', '$lastName', '$ips')";
 	$sql = "INSERT INTO registrations (id, familyLastName, homePhone, homeEmail, address, city, zip,
-		 	lastName, firstName, grade, mobilePhone, email, ips, pssp, supportgroup, 
+		 	fatherLastName, fatherFirstName, fatherMobilePhone, fatherEmail, 
+		 	motherLastName, motherFirstName, motherMobilePhone, motherEmail, ips, pssp, supportgroup, 
 		 	leadership, cyfact, alumniact, considerhomeschool, bonfire, locanlibrary,
 		 	fallfamilykickoff, robotics, schoolpictures, cyfaerozone, sportsaturdays, yearbook,
 		 	springsquaredance, flagfootball, usedbooksale, banquet, soccer, momtea, seniorsponsor,
@@ -121,7 +125,8 @@ Zip: <input type="text" name="zip"><br>
 		 	dramaclub, elementaryactivities, eighthgraduation, sciencefaire,
 		 	helpissueshs) 
 		VALUES (NULL, '$familyLastName', '$homePhone', '$homeEmail', '$address', '$city', '$zip', 
-			'$lastName', '$firstName', '$grade', '$mobilePhone', '$email', '$ips', '$ips', '$ips', 
+			'$fatherLastName', '$fatherFirstName', '$fatherMobilePhone', '$fatherEmail', 
+			'$motherLastName', '$motherFirstName', '$motherMobilePhone', '$motherEmail','$ips', '$ips', '$ips', 
 			'$leadership', '$cyfact', '$alumniact', '$considerhomeschool', '$bonfire', '$locanlibrary',
 			'$fallfamilykickoff', '$robotics', '$schoolpictures', '$cyfaerozone', '$sportsaturdays', '$yearbook',
 			'$springsquaredance', '$flagfootball', '$usedbooksale', '$banquet', '$soccer', '$momtea', '$seniorsponsor',

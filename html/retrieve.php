@@ -59,9 +59,8 @@
 						<th>Address</th>
 						<th>City</th>
 						<th>Zip</th>
-						<th>Last name</th>
+						<th>Father Last name</th>
 						<th>First name</th>
-						<th>Grade</th>
 						<th>Mobile phone</th>
 						<th>email</th>
 						<th>ips</th>
@@ -85,11 +84,10 @@
 		        echo '<td>'. $row["address"]. '</td>';
 		        echo '<td>'. $row["city"]. '</td>';		        
 		        echo '<td>'. $row["zip"]. '</td>';
-		        echo '<td>'. $row["lastName"]. '</td>';
-		        echo '<td>'. $row["firstName"]. '</td>';
-		        echo '<td>'. $row["grade"]. '</td>';
-		        echo '<td>'. $row["mobilePhone"]. '</td>';
-				echo '<td>'. $row["email"]. '</td>';		        
+		        echo '<td>'. $row["fatherLastName"]. '</td>';
+		        echo '<td>'. $row["fatherFirstName"]. '</td>';
+		        echo '<td>'. $row["fatherMobilePhone"]. '</td>';
+				echo '<td>'. $row["fatherEmail"]. '</td>';		        
 		        echo '<td>'. $row["ips"]. '</td>';
 		        echo '<td>'. $row["leadership"]. '</td>';
 		        echo '<td>'. $row["cyfact"]. '</td>';
@@ -138,11 +136,10 @@
 		        echo '<td>'. $row["address"]. '</td>';
 		        echo '<td>'. $row["city"]. '</td>';		        
 		        echo '<td>'. $row["zip"]. '</td>';
-		        echo '<td>'. $row["lastName"]. '</td>';
-		        echo '<td>'. $row["firstName"]. '</td>';
-		        echo '<td>'. $row["grade"]. '</td>';
-		        echo '<td>'. $row["mobilePhone"]. '</td>';
-				echo '<td>'. $row["email"]. '</td>';
+		        echo '<td>'. $row["fatherLastName"]. '</td>';
+		        echo '<td>'. $row["fatherFirstName"]. '</td>';
+		        echo '<td>'. $row["fatherMobilePhone"]. '</td>';
+				echo '<td>'. $row["fatherEmail"]. '</td>';
 				echo '</tr>';
 			}
 		}

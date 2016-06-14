@@ -6,19 +6,25 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 	<!-- Add additional student  -->
 	<script>
+	var rowNum = 0;
+
 	$(document).ready(function(){
 
 	    $("#addChild").click(function(){
-	        $("button").before(
-	        	'<div class="form-group"><label for="student[0][lastName]">Last Name:</label><input type="text" class="form-control" name="student[0][lastName]" placeholder="Student Last Name"></div><div class="form-group"><label for="student[0][firstName]">First Name:</label><input type="text" class="form-control" name="student[0][firstName]" placeholder="Student First Name"></div><div class="form-group"><label for="student[0][grade]">Grade:</label><input type="text" class="form-control" name="student[0][grade]" placeholder="5"></div><div class="form-group"><label for="student[0][mobilePhone]">Mobile Phone:</label><input type="text" class="form-control" name="student[0][mobilePhone]" placeholder="559-000-0000"></div><div class="form-group"><label for="student[0][email]">Email</label><input type="email" class="form-control" name="student[0][email]" placeholder="john.doe@example.com"></div><br>'
+		rowNum++;
+		window.alert(rowNum);
+	        $("#addChild").before(
+	        	'<div class="form-group"><label for="student[rowNum][lastName]"> Last Name: </label> <input type="text" class="form-control" name="student[rowNum][lastName]" placeholder="Student Last Name"> </div> <div class="form-group"> <label for="student[rowNum][firstName]"> First Name: </label> <input type="text" class="form-control" name="student[rowNum][firstName]" placeholder="Student First Name"> </div> <div class="form-group"> <label for="student[rowNum][grade]"> Grade: </label> <input type="text" class="form-control" name="student[rowNum][grade]" placeholder="5"> </div> <div class="form-group"> <label for= "student[rowNum][mobilePhone]"> Mobile Phone: </label> <input type="text" class="form-control" name="student[rowNum][mobilePhone]" placeholder="559-000-0000"> </div> <div class="form-group"> <label for="student[rowNum][email]"> Email </label> <input type="email" class="form-control" name="student[rowNum][email]" placeholder="john.doe@example.com"> </div> <br>'
 	        );
 	    });
-	$("#addChild").click(function(){
-		        $(".stuSignature").after('<div><div class="form-group studentSignature"><label for="studentname">Student Name:</label><input type="text" class="form-control" name="studentname" placeholder="Type Name"></div><div class="form-group"><label for="studentgrade">Grade:</label><input type="text" class="form-control" name="studentgrade" placeholder="Grade"></div><div class="form-group"><label for="studentsignature">Student Signature:</label><input type="text" class="form-control" name="studentsignature" placeholder="Sign Name"></div><div class="form-group"><label for="studentdate">Date:</label><input type="text" class="form-control" name="studentdate" placeholder="Date"></div></div>'
-         );
-    });
+		$("#addChild").click(function(){
+			    $(".stuSignature").after(
+			        '<div> <div class="form-group studentSignature"> <label for="studentname"> Student Name: </label> <input type="text" class="form-control" name="studentname" placeholder="Type Name"> </div> <div class="form-group"> <label for="studentgrade">Grade: </label> <input type="text" class="form-control" name="studentgrade" placeholder="Grade"> </div> <div class="form-group"> <label for="studentsignature"> Student Signature: </label> <input type="text" class="form-control" name="studentsignature" placeholder="Sign Name"> </div> <div class="form-group"> <label for="studentdate"> Date: </label> <input type="text" class="form-control" name="studentdate" placeholder="Date"> </div> </div>'
+	         );
+	    });
 
 	});
 	</script>
@@ -155,19 +161,20 @@
 		    is offered to member families)
 		  </label>
 		</div>
-
+		<div>
 		  <div class="form-group">
 		    <label for="PsspGroup">PSSP/Group Name:</label>
-		    <input type="text" class="form-control" name="PsspGroup" placeholder="PSSP/Group Name">
+		    <input type="text" class="form-control" name="PsspGroup" placeholder="As filed with State of CA">
 		  </div>
 		  <div class="form-group">
 		    <label for="administrator">Administrator:</label>
 		    <input type="text" class="form-control" name="administrator" placeholder="Administrator">
 		  </div>
-	<ol>
+		</div>
 		<p><em>As filed with the State of California </em></p>
 		<h3><strong>Membership Agreement</strong></h3>
-		<p><strong>Parents</strong></p>
+		<h3><strong>Parents</strong></h3>
+	<ol>
 		<li>I am a Christian. I am a believer in and a follower of Jesus Christ, the Messiah.
 		</li>
 		<li>I will cooperate with CHEFA in engaging only Christians in positions of responsibility and leadership.

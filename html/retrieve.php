@@ -10,6 +10,10 @@
   	<a href='retrieve.php?completeList=true'>Complete List</a>
 	<a href='retrieve.php?rosterOnly=true'>Roster Only</a>
 	<a href='retrieve.php?surveyList=true'>Survey List</a>
+	<form action="retrieve.php">
+		<input name="search"/>
+		<button type="submit">
+	</form>
 	</div>
 </nav>
 
@@ -44,7 +48,7 @@
 
 
 
-	$sql = "SELECT * FROM registrations where 1";
+	$sql = "SELECT * FROM registrations where familyLastName='Junnila'";
 	$result = $conn->query($sql);
 	function fullListFunction($result) 
 	{

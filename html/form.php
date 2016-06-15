@@ -23,7 +23,7 @@
 	    });
 		$("#addChild").click(function(){
 			    $(".stuSignature").after(
-			        '<div> <div class="form-group studentSignature"> <label for="studentname"> Student Name: </label> <input type="text" class="form-control" name="studentname" placeholder="Type Name"> </div> <div class="form-group"> <label for="studentgrade">Grade: </label> <input type="text" class="form-control" name="studentgrade" placeholder="Grade"> </div> <div class="form-group"> <label for="studentsignature"> Student Signature: </label> <input type="text" class="form-control" name="studentsignature" placeholder="Sign Name"> </div> <div class="form-group"> <label for="studentdate"> Date: </label> <input type="text" class="form-control" name="studentdate" placeholder="Date"> </div> </div>'
+			        '<div> <div class="form-group studentSignature"> <label for="studentname"> Student Name: </label> <input type="text" class="form-control" name="studentname" placeholder="Type Name"> </div> <div class="form-group"> <label for="studentgrade">Grade: </label> <input type="text" class="form-control" name="studentgrade" placeholder="Grade"> </div> <div class="form-group"> <label for="studentsignature"> Student Signature: </label> <input type="text" class="form-control" name="studentsignature" placeholder="Sign Name"> </div> <div class="form-group"> <label for="studentdate"> Date: </label> <input type="date" class="form-control" name="studentdate" placeholder="Date"> </div> </div>'
 	         );
 	    });
 
@@ -44,7 +44,7 @@
 	  </div>
 	  <div class="form-group">
 	    <label for="homePhone">Home Phone:</label>
-	    <input type="text" class="form-control" name="homePhone" required="true" placeholder="559-000-0000">
+	    <input type="tel" class="form-control" name="homePhone" required="true" placeholder="559-000-0000">
 	  </div>
 	  <div class="form-group">
 	    <label for="email">Email</label>
@@ -210,7 +210,7 @@
 		  </div>
 		  <div class="form-group">
 		    <label for="date">Date:</label>
-		    <input type="text" class="form-control" name="date" placeholder="Date">
+		    <input type="date" class="form-control" name="date" placeholder="Date">
 		  </div>
 		</div>
 		<div class="stuSignature">
@@ -228,7 +228,7 @@
 		  </div>
 		  <div class="form-group">
 		    <label for="studentdate">Date:</label>
-		    <input type="text" class="form-control" name="studentdate" placeholder="Date">
+		    <input type="date" class="form-control" name="studentdate" placeholder="Date">
 		  </div>
 		</div>
 	<h3><strong>Membership Benefits</strong></h3>

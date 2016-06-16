@@ -52,14 +52,14 @@
 	$result = $conn->query($sql);
 	function fullListFunction($result) 
 	{
-	echo '<table border="1">';
+	echo '<table border="1" class="table">';
 		//Table header Info
 		if ($result->num_rows > 0) 
 		{
 			echo 	'<tr>
-						<th>Family Name</th>
-						<th>Home Phone</th>
-						<th>Home email</th>
+						<th>Family</th>
+						<th>Phone</th>
+						<th>Email</th>
 						<th>Address</th>
 						<th>City</th>
 						<th>Zip</th>
@@ -68,16 +68,16 @@
 						<th>Mobile phone</th>
 						<th>email</th>
 						<th>ips</th>
-						<th>leadership</th>
-				        <th>cyfact</th>
-				        <th>alumniact</th>
-				        <th>considerhomeschool</th>
-				        <th>bonfire</th>
-				        <th>locanlibrary</th>
-				        <th>fallfamilykickoff</th>
-				        <th>robotics</th>
-				        <th>schoolpictures</th>
-				        <th>cyfaerozone</th>
+						<th>ldr</th>
+				        <th>act</th>
+				        <th>alu</th>
+				        <th>hms</th>
+				        <th>bon</th>
+				        <th>lib</th>
+				        <th>fal</th>
+				        <th>rbt</th>
+				        <th>pic</th>
+				        <th>aer</th>
 					</tr>';
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
@@ -91,18 +91,31 @@
 		        echo '<td>'. $row["fatherLastName"]. '</td>';
 		        echo '<td>'. $row["fatherFirstName"]. '</td>';
 		        echo '<td>'. $row["fatherMobilePhone"]. '</td>';
-				echo '<td>'. $row["fatherEmail"]. '</td>';		        
-		        echo '<td>'. $row["ips"]. '</td>';
-		        echo '<td>'. $row["leadership"]. '</td>';
-		        echo '<td>'. $row["cyfact"]. '</td>';
-		        echo '<td>'. $row["alumniact"]. '</td>';
-		        echo '<td>'. $row["considerhomeschool"]. '</td>';
-		        echo '<td>'. $row["bonfire"]. '</td>';
-		        echo '<td>'. $row["locanlibrary"]. '</td>';
-		        echo '<td>'. $row["fallfamilykickoff"]. '</td>';
-		        echo '<td>'. $row["robotics"]. '</td>';
-		        echo '<td>'. $row["schoolpictures"]. '</td>';
-		        echo '<td>'. $row["cyfaerozone"]. '</td>';
+				echo '<td>'. $row["fatherEmail"]. '</td>';	
+				if ($row["ips"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+	        
+		        // echo '<td>'. $row["ips"]. '</td>';
+		        // echo '<td>'. $row["leadership"]. '</td>';
+		        // echo '<td>'. $row["cyfact"]. '</td>';
+		        // echo '<td>'. $row["alumniact"]. '</td>';
+		        // echo '<td>'. $row["considerhomeschool"]. '</td>';
+		        // echo '<td>'. $row["bonfire"]. '</td>';
+		        // echo '<td>'. $row["locanlibrary"]. '</td>';
+		        // echo '<td>'. $row["fallfamilykickoff"]. '</td>';
+		        // echo '<td>'. $row["robotics"]. '</td>';
+		        // echo '<td>'. $row["schoolpictures"]. '</td>';
+		        // echo '<td>'. $row["cyfaerozone"]. '</td>';
+		        if ($row["leadership"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["cyfact"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["alumniact"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["considerhomeschool"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["bonfire"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["locanlibrary"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["fallfamilykickoff"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["robotics"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["schoolpictures"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}		        
+		        if ($row["cyfaerozone"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+
 		        echo '</tr>';
 		    }
 		} else {
@@ -113,14 +126,14 @@
   }
   function rosterOnlyFunction($result) 
   {
-	echo '<table border="1">';
+	echo '<table border="1" class="table">';
 		//Table header Info
 		if ($result->num_rows > 0) 
 		{
 			echo 	'<tr>
-						<th>Family Name</th>
-						<th>Home Phone</th>
-						<th>Home email</th>
+						<th>Family</th>
+						<th>Phone</th>
+						<th>Email</th>
 						<th>Address</th>
 						<th>City</th>
 						<th>Zip</th>
@@ -151,38 +164,47 @@
 
 function surveyListFunction($result) 
   {
-	echo '<table border="1">';
+	echo '<table border="1" class="table">';
 		//Table header Info
 		if ($result->num_rows > 0) 
 		{
 			echo 	'<tr>
-						<th>Family Name</th>
-						<th>leadership</th>
-				        <th>cyfact</th>
-				        <th>alumniact</th>
-				        <th>considerhomeschool</th>
-				        <th>bonfire</th>
-				        <th>locanlibrary</th>
-				        <th>fallfamilykickoff</th>
-				        <th>robotics</th>
-				        <th>schoolpictures</th>
-				        <th>cyfaerozone</th>
+						<th>Family</th>
+						<th>ldr</th>
+				        <th>act</th>
+				        <th>alu</th>
+				        <th>hms</th>
+				        <th>bon</th>
+				        <th>lib</th>
+				        <th>fal</th>
+				        <th>rbt</th>
+				        <th>pic</th>
+				        <th>aer</th>
 
 					</tr>';
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
 		    	echo '<tr>';
 		        echo '<td>'. $row["familyLastName"]. '</td>';
-		        echo '<td>'. $row["leadership"]. '</td>';
-		        echo '<td>'. $row["cyfact"]. '</td>';
-		        echo '<td>'. $row["alumniact"]. '</td>';
-		        echo '<td>'. $row["considerhomeschool"]. '</td>';
-		        echo '<td>'. $row["bonfire"]. '</td>';
-		        echo '<td>'. $row["locanlibrary"]. '</td>';
-		        echo '<td>'. $row["fallfamilykickoff"]. '</td>';
-		        echo '<td>'. $row["robotics"]. '</td>';
-		        echo '<td>'. $row["schoolpictures"]. '</td>';
-		        echo '<td>'. $row["cyfaerozone"]. '</td>';
+		        // echo '<td>'. $row["leadership"]. '</td>';
+		        // echo '<td>'. $row["cyfact"]. '</td>';
+		        // echo '<td>'. $row["alumniact"]. '</td>';
+		        // echo '<td>'. $row["considerhomeschool"]. '</td>';
+		        // echo '<td>'. $row["bonfire"]. '</td>';
+		        // echo '<td>'. $row["locanlibrary"]. '</td>';
+		        // echo '<td>'. $row["fallfamilykickoff"]. '</td>';
+		        // echo '<td>'. $row["robotics"]. '</td>';
+		        // echo '<td>'. $row["schoolpictures"]. '</td>';
+		        if ($row["leadership"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["cyfact"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["alumniact"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["considerhomeschool"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["bonfire"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["locanlibrary"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["fallfamilykickoff"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["robotics"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
+		        if ($row["schoolpictures"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}		        
+		        if ($row["cyfaerozone"]==1) {echo '<td>&#10004;</td>';}else{echo '<td> </td>';}
 
 				echo '</tr>';
 			}

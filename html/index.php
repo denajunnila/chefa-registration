@@ -5,6 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Chefa Registration</title>
+	<?php include_once("chefa_header.php"); ?>
 	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   -->
 	<link rel="stylesheet" href="style.css" type="text/css" />
 

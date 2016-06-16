@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
-	<link rel="stylesheet" href="css/styles.css">
+    <?php include_once("chefa_header.php"); ?>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top">
